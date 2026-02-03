@@ -1,7 +1,13 @@
 import './Footer.css';
 
-function Footer() {
+function Footer({ onNavigate }) {
   const currentYear = new Date().getFullYear();
+
+  const handleNavClick = (page) => {
+    if (onNavigate) {
+      onNavigate(page);
+    }
+  };
 
   return (
     <footer className="footer">
@@ -13,9 +19,9 @@ function Footer() {
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a onClick={() => handleNavClick('home')} style={{ cursor: 'pointer' }}>Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a onClick={() => handleNavClick('about')} style={{ cursor: 'pointer' }}>About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
