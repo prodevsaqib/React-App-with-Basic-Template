@@ -25,9 +25,9 @@ function Header({ onNavigate }) {
         <nav className="nav">
           <ul>
             <li><a onClick={() => handleNavClick('home')} className="nav-link">Home</a></li>
-            <li><a href="#services" className="nav-link">Services</a></li>
+            <li><a onClick={() => handleNavClick('services')} className="nav-link">Services</a></li>
             <li><a onClick={() => handleNavClick('about')} className="nav-link">About</a></li>
-            <li><a href="#contact" className="nav-link">Contact</a></li>
+            <li><a onClick={() => handleNavClick('contact')} className="nav-link">Contact</a></li>
           </ul>
         </nav>
       </div>

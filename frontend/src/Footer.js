@@ -20,9 +20,9 @@ function Footer({ onNavigate }) {
           <h3>Quick Links</h3>
           <ul>
             <li><a onClick={() => handleNavClick('home')} style={{ cursor: 'pointer' }}>Home</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a onClick={() => handleNavClick('services')} style={{ cursor: 'pointer' }}>Services</a></li>
             <li><a onClick={() => handleNavClick('about')} style={{ cursor: 'pointer' }}>About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a onClick={() => handleNavClick('contact')} style={{ cursor: 'pointer' }}>Contact</a></li>
           </ul>
         </div>
         <div className="footer-section">

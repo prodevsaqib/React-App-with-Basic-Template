@@ -2,6 +2,8 @@ import './App.css';
 import { useState } from 'react';
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
+import ServicesPage from './ServicesPage';
+import ContactPage from './ContactPage';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -20,6 +22,18 @@ function App() {
       {currentPage === 'about' && (
         <>
           <AboutPage />
+          <Footer onNavigate={navigateTo} />
+        </>
+      )}
+      {currentPage === 'services' && (
+        <>
+          <ServicesPage />
+          <Footer onNavigate={navigateTo} />
+        </>
+      )}
+      {currentPage === 'contact' && (
+        <>
+          <ContactPage />
           <Footer onNavigate={navigateTo} />
         </>
       )}

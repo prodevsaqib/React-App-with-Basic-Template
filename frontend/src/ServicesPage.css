@@ -1,0 +1,368 @@
+.services-page {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.services-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 5rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.services-hero h1 {
+  font-size: 3.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.services-hero p {
+  font-size: 1.3rem;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Services Grid */
+.services-grid-section {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.services-grid-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.service-card-detailed {
+  background: #f8f9fa;
+  padding: 2.5rem;
+  border-radius: 15px;
+  border: 2px solid #ecf0f1;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.service-card-detailed:hover {
+  transform: translateY(-10px);
+  border-color: #3498db;
+  box-shadow: 0 15px 40px rgba(52, 152, 219, 0.2);
+  background: white;
+}
+
+.service-icon-large {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.service-card-detailed h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.service-desc {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.service-features li {
+  color: #555;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.learn-more {
+  background-color: #3498db;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #2980b9;
+}
+
+/* Process Section */
+.process-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f8f9fa 100%);
+}
+
+.process-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  position: relative;
+}
+
+.process-step {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto 1rem;
+}
+
+.process-step h3 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.process-step p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.pricing-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pricing-card {
+  background: white;
+  border: 2px solid #ecf0f1;
+  border-radius: 15px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  border-color: #3498db;
+  box-shadow: 0 15px 40px rgba(52, 152, 219, 0.2);
+}
+
+.pricing-card.featured {
+  border: 2px solid #3498db;
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.05), rgba(52, 152, 219, 0.1));
+  transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  color: #3498db;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.price-desc {
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  color: #555;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.pricing-features li:last-child {
+  border-bottom: none;
+}
+
+.pricing-button {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-button:hover {
+  background-color: #2980b9;
+}
+
+/* Technologies Section */
+.technologies-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f8f9fa 100%);
+}
+
+.technologies-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.tech-badge {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #3498db;
+  border: 2px solid #3498db;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tech-badge:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* CTA Section */
+.services-cta {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.services-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.services-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.cta-button {
+  background-color: #f39c12;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .services-hero h1 {
+    font-size: 2rem;
+  }
+
+  .services-grid-section h2,
+  .process-section h2,
+  .pricing-section h2,
+  .technologies-section h2 {
+    font-size: 2rem;
+  }
+
+  .pricing-card.featured {
+    transform: scale(1);
+  }
+
+  .pricing-card.featured:hover {
+    transform: translateY(-10px);
+  }
+}
